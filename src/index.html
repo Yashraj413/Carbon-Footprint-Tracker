@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carbon Footprint Tracker & Air Quality</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app" role="main" aria-label="Carbon Footprint Tracker with Air Quality">
+  <h1>Your Carbon Journey</h1>
+  <p class="mb-6 text-gray-700" style="font-weight: 500;">Track your impact, one step at a time.</p>
+
+  <section>
+    <h2>Live Air Quality</h2>
+    <div class="flex gap-3 mt-2">
+      <input
+        id="city-input"
+        placeholder="Enter city, e.g., New Delhi"
+        aria-label="City name for air quality"
+      />
+      <button
+        id="fetch-pollution-btn"
+        aria-label="Fetch air quality"
+      >
+        Check
+      </button>
+    </div>
+  </section>
+
+  <section id="footprint-section">
+    <div id="footprint-card" aria-live="polite" aria-atomic="true">
+      <p class="small" aria-label="Current total footprint">Total Footprint (kg CO₂)</p>
+      <p id="total-footprint" role="heading" aria-level="2">0.00</p>
+      <div id="progress-container" aria-label="Progress towards weekly carbon footprint goal">
+        <div id="progress-bar-fill"></div>
+      </div>
+      <p class="small" aria-live="polite">Goal: <span id="goal-amount">0.00</span> kg CO₂</p>
+    </div>
+
+    <form id="footprint-form" aria-label="Log carbon footprint activity" novalidate>
+      <label for="activity-type">Activity Type</label>
+      <select id="activity-type" name="type" required>
+        <option value="transport">Transportation (km)</option>
+        <option value="electricity">Electricity (kWh)</option>
+        <option value="diet">Diet (meals)</option>
+        <option value="flight">Flight (km)</option>
+        <option value="heating">Home Heating (kWh)</option>
+        <option value="waste">Waste (kg)</option>
+        <option value="shopping">Shopping (items)</option>
+      </select>
+
+      <label for="activity-amount">Amount</label>
+      <input type="number" id="activity-amount" name="amount" placeholder="Enter amount" min="0" required />
+
+      <button type="submit">Log Activity</button>
+    </form>
+
+    <form id="goal-form" aria-label="Set weekly carbon footprint goal" novalidate>
+      <label for="goal-input">Weekly Goal (kg CO₂)</label>
+      <input type="number" id="goal-input" name="goal" placeholder="e.g. 50" min="0" required />
+      <button type="submit">Save Goal</button>
+    </form>
+
+    <section aria-live="polite" aria-atomic="true">
+      <h2>Activity History</h2>
+      <div id="history-list" aria-label="Logged activities">
+        <p>No activities logged yet.</p>
+      </div>
+    </section>
+  </section>
+
+  <div id="air-quality-modal" aria-modal="true" role="dialog" aria-labelledby="air-quality-label" aria-hidden="true">
+    <button class="close-btn" aria-label="Close air quality info modal">&times;</button>
+    <h3 id="air-quality-label">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M4 10h14M2 14h18M8 18h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+      Air Quality Index
+    </h3>
+    <div class="aqi-value" id="aqi-value" aria-live="polite" aria-atomic="true">--</div>
+    <div class="aqi-status" id="aqi-status">Loading...</div>
+    <div class="pollutants" id="pollutants"></div>
+    <div class="health-advice" id="health-advice"></div>
+    <div class="carbon-tip" id="carbon-tip"></div>
+  </div>
+
+  <script src="app.js"></script>
+</div>
+</body>
+</html>
