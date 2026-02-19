@@ -1,8 +1,8 @@
-# 🌍 Carbon Footprint Tracker & Live Air Quality App
+# Carbon Footprint Tracker & Live Air Quality App
 
 A modern, responsive web application built with HTML, CSS, and vanilla JavaScript for tracking personal carbon footprints and viewing real-time Air Quality Index (AQI) data for any city.
 
-## ✨ Features
+## Features
 
 * **Carbon Footprint Tracking:** Log various activities (Transportation, Electricity, Diet, etc.) and see your total calculated CO₂ footprint in real-time.
 * **Weekly Goal Setting:** Set a target for your weekly carbon emissions and visualize your progress with a dynamic progress bar.
@@ -11,13 +11,13 @@ A modern, responsive web application built with HTML, CSS, and vanilla JavaScrip
 * **Health Advice & Carbon Tips:** Get health recommendations based on the current AQI and a random tip for reducing your carbon emissions.
 * **Interactive Design:** A clean, user-friendly interface with modal popups for displaying detailed air quality and goal information.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **HTML5:** Structure and Semantics
 * **CSS3:** Styling (Custom and responsive)
 * **JavaScript (ES6+):** Core logic, API calls, and DOM manipulation
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -46,7 +46,7 @@ You will need a free API key from **OpenWeatherMap** to fetch both geolocation a
 
     > **Tip:** For local development and to avoid CORS issues that some browsers might impose on local files, it's recommended to run it using a simple local server (e.g., using VS Code's "Live Server" extension or Python's `http.server`).
 
-## ✍️ Usage
+##  Usage
 
 ### Carbon Footprint Tracker
 
@@ -60,7 +60,7 @@ You will need a free API key from **OpenWeatherMap** to fetch both geolocation a
 2.  Click the **Check** button.
 3.  A modal will appear showing the **AQI** level, **status**, pollutant concentrations, and relevant health advice.
 
-## ⚙️ Core Logic Details
+## Core Logic Details
 
 ### Carbon Footprint Calculation
 
