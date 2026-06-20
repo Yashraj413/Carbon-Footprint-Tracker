@@ -2,7 +2,7 @@
 
 A modern, responsive web application built with HTML, CSS, and vanilla JavaScript for tracking personal carbon footprints and viewing real-time Air Quality Index (AQI) data for any city.
 
-## Features
+## Features 
 
 * **Carbon Footprint Tracking:** Log various activities (Transportation, Electricity, Diet, etc.) and see your total calculated CO₂ footprint in real-time.
 * **Weekly Goal Setting:** Set a target for your weekly carbon emissions and visualize your progress with a dynamic progress bar.
