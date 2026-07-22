@@ -105,8 +105,7 @@ async function fetchAirQualityData(city) {
 
     healthAdviceEl.textContent = category.advice;
 
-    // Show random carbon reduction tip
-    carbonTipEl.textContent = "🌱 Tip: " + getRandomCarbonTip();
+    carbonTipEl.textContent = " Tip: " + getRandomCarbonTip();
 
   } catch (error) {
     aqiValueEl.textContent = '--';
