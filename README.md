@@ -16,7 +16,7 @@ A modern, responsive web application built with HTML, CSS, and vanilla JavaScrip
 * **HTML5:** Structure and Semantics
 * **CSS3:** Styling (Custom and responsive)
 * **JavaScript (ES6+):** Core logic, API calls, and DOM manipulation
-
+        
 ## Getting Started
 
 ### Prerequisites
