@@ -1,4 +1,4 @@
-# Carbon Footprint Tracker & Live Air Quality App
+# Carbon Footprint Tracker & Live Air Quality App       
 
 A modern, responsive web application built with HTML, CSS, and vanilla JavaScript for tracking personal carbon footprints and viewing real-time Air Quality Index (AQI) data for any city.          
 
