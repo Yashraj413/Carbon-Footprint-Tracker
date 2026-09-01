@@ -76,3 +76,4 @@ const conversionFactors = {
   waste: 0.5, // kg CO₂ per kg
   shopping: 1.5, // kg CO₂ per item (average)
 };
+
